@@ -1,0 +1,24 @@
+.mine{
+    font-size:80px;
+    color: white;
+    text-align: center;
+}
+.your{
+    font-size:50px;
+    color: white;
+    text-align: center;
+}
+.navbar-brand{
+    width: 30px;
+    height: 30px;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+.container-fluid{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

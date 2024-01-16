@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 10</title>
+    <style>
+        input[type="text"],input[type="number"],input[type="email"],textarea{
+            color:black;
+            }
+        input[type="submit"]{
+            color: black;
+            background-color: white;
+            margin-left: 100px;
+            }
+        input[type="reset"]{
+            color:black;
+            background-color: white;
+            margin-left: 25px;    
+            }
+        form{
+            padding: 20px;
+            justify-content: center;
+            margin-top: 20px;
+            }
+    </style>
+</head>
+<body bgcolor="grey">
+    <form onsubmit="return task10()">
+        <table cellspacing="20px" color="white">
+            <tr>
+                <th><label><font color="white">FIRST NAME</font></label></th>
+                <td><input type="text" value="" id="name"><font color="white">(max 30 characters a-z and A-Z)</font></td>
+            </tr>
+            <tr>
+                <th><label><font color="white">LAST NAME</font></label></th>
+                <td><input type="text" id="lastname"><font color="white">(max 30 characters a-z and A-Z)</font></td>
+            </tr>
+            <tr>
+                <th><label><font color="white">DATE OF BIRTH</font></label></th>
+                <td>
+                    <select id="day">
+                        <option value="">DAY:</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                    
+                    <select id="month">
+                        <option value="">MONTH:</option>
+                        <option value="JAN">JAN</option>
+                        <option value="FEB">FEB</option>
+                    </select>
+                    
+                    <select id="year">
+                        <option value="">YEAR:</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                    </select>
+                    
+                </td>
+            </tr>
+            <tr>
+                <th><label><font color="white">EMAIL ID</font></label></th>
+                <td><input type="email" id="gmail"></td>
+            </tr>
+            <tr>
+                <th><label><font color="white">MOBILE NUMBER</font></label></th>
+                <td><input type="number" id="mobile"><font color="white">(10 digit number)</font></td>
+            </tr>
+            <tr>
+                <th><label><font color="white">GENDER</font></label></th>
+                <td>
+                    <input type="radio" value="Male" name="Gender"><font color="white">Male</font>
+                    <input type="radio" value="Female" name="Gender"><font color="white">Female</font>
+                </td>
+            </tr>
+            <tr>
+                <th><label><font color="white">ADDRESS</font></label></th>
+                <td><textarea cols="40px" rows="5px" id="address"></textarea></td>
+            </tr>
+            <tr>
+                <th><label><font color="white">CITY</font></label></th>
+                <td><input type="text"><font color="white" id="city">(max 30 characters a-z and A-Z)</font></td>
+            </tr>
+            <tr>
+                <th><label><font color="white">PIN CODE</font></label></th>
+                <td><input type="number"><font color="white" id="pincode">(6 digit number)</font></td>
+            </tr>
+            <tr>
+                <th><label><font color="white">STATE</font></label></th>
+                <td><input type="text"><font color="white" id="state">(max 30 characters a-z and A-Z)</font></td>
+            </tr>
+            <tr>
+                <th><label><font color="white">COUNTRY</font></label></th>
+                <td>
+                    <select id="country">
+                        <option value="">Select</option>
+                        <option value="India">India</option>
+                    <option value="America">America</option>
+                    <option value="Pakisthan">Pakisthan</option>
+                    <option value="China">China</option>
+                    <option value="Canada">Canada</option></select>
+                </td>
+            </tr>
+            </table>
+            <table>
+            <tr>
+                <th><label><font color="white">COURSE</font></label></th>
+                <td>
+                    <input type="radio" value="Php" name="COURSE"><font color="white">Php</font>
+                    <input type="radio" value="Python" name="COURSE"><font color="white">Python</font>
+                    <input type="radio" value="Java" name="COURSE"><font color="white">Java</font>
+                    <input type="radio" value="Digital Marketing" name="COURSE"><font color="white">Digital Marketing</font>
+                </td>
+            </tr>
+        </table>
+        <input type="submit"value="submit" align="center">
+        <input type="reset"value="reset" align="center">
+    </form>
+    <script>
+        function task10() {
+    var Day = document.getElementById("day").value;
+    var Month = document.getElementById("month").value;
+    var Year = document.getElementById("year").value;
+    var Name = document.getElementById("name").value;
+    var Lastname = document.getElementById("lastname").value;
+    var Email = document.getElementById("gmail").value;
+    var City = document.getElementById("city").value;
+    var Mobile = document.getElementById("mobile").value;
+    var State = document.getElementById("state").value;
+    var Pincode = document.getElementById("pincode").value;
+    var Address = document.getElementById("address").value;
+    var Gender = document.querySelector('input[name="Gender"]:checked');
+    var COURSES = document.querySelector('input[name="COURSE"]:checked');
+    var Country = document.getElementById("country").value;
+
+    if (Name == '' || Lastname == '' || City == '' || Email == '') {
+        alert("Please complete all details.");
+        return false;
+    } else if (Address == '') {
+        alert("Please Fill the Address.");
+        return false;
+    } else if (State == '') {
+        alert("Please Type the State.");
+        return false;
+    } else if (Pincode == '') {
+        alert("Please type the Pincode.");
+        return false;
+    } else if (!Name.match(/^[A-Za-z]+$/) || !Lastname.match(/^[A-Za-z]+$/)) {
+        alert("Invalid name or lastname. Use only alphabets.");
+        return false;
+    }
+    else if (Day == '' || Month == '' || Year == '') {
+        alert("Please select a valid date.");
+        return false;
+    } else if (!Gender) {
+        alert("Please select a gender.");
+        return false;
+    } else if (Country == '') {
+        alert("Please select a country.");
+        return false;
+    } else if (!COURSES) {
+        alert("Please select a course.");
+        return false;
+    } else {
+        alert("You have successfully Filled the form Welcome.");
+        return true;
+    }
+}
+
+    </script>
+</body>
+</html>

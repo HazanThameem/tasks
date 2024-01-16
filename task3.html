@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <link href="task3.css"rel="stylesheet">
+</head>
+<body bgcolor="cadetblue">
+    <form>
+        <table cellspacing="15px" color="white">
+            <tr>
+                <th><label><font color="white">FIRST NAME</font></label></th>
+                <td><input type="text" ><font color="white">(max 30 characters a-z and A-Z)</font></td>
+            </tr>
+            <tr>
+                <th><label><font color="white">LAST NAME</font></label></th>
+                <td><input type="text" required><font color="white">(max 30 characters a-z and A-Z)</font></td>
+            </tr>
+            <tr>
+                <th><label><font color="white">DATE OF BIRTH</font></label></th>
+                <td>
+                    <select>
+                        <option>DAY:</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </td>
+                    <td>
+                        <select>
+                            <option>MONTH:</option>
+                            <option>JAN</option>
+                            <option>FEB</option>
+                            <option>MAR</option>
+                            <option>JUNE</option>
+                            <option>JULY</option>
+                        </select>
+                    </td>
+                <td>
+                    <select>
+                        <option>YEAR:</option>
+                        <option>2023</option>
+                        <option>2022</option>
+                        <option>2021</option>
+                        <option>2020</option>
+                        <option>2019</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><label><font color="white">EMAIL ID</font></label></th>
+                <td><input type="email" autofocus></td>
+            </tr>
+            <tr>
+                <th><label><font color="white">MOBILE NUMBER</font></label></th>
+                <td><input type="number"><font color="white">(10 digit number)</font></td>
+            </tr>
+            <tr>
+                <th><label><font color="white">GENDER</font></label></th>
+                <td>
+                    <input type="radio" value="Male" name="Gender"><font color="white">Male</font>
+                    <input type="radio" value="Female" name="Gender"><font color="white">Female</font>
+                </td>
+            </tr>
+            <tr>
+                <th><label><font color="white">ADDRESS</font></label></th>
+                <td><textarea cols="40px" rows="5px"></textarea></td>
+            </tr>
+            <tr>
+                <th><label><font color="white">CITY</font></label></th>
+                <td><input type="text"><font color="white">(max 30 characters a-z and A-Z)</font></td>
+            </tr>
+            <tr>
+                <th><label><font color="white">PIN CODE</font></label></th>
+                <td><input type="number"><font color="white">(6 digit number)</font></td>
+            </tr>
+            <tr>
+                <th><label><font color="white">STATE</font></label></th>
+                <td><input type="text"><font color="white">(max 30 characters a-z and A-Z)</font></td>
+            </tr>
+            <tr>
+                <th><label><font color="white">COUNTRY</font></label></th>
+                <td>
+                    <select><option value="India">India</option>
+                    <option value="America">America</option>
+                    <option value="Pakisthan">Pakisthan</option>
+                    <option value="China">China</option>
+                    <option value="Canada">Canada</option></select>
+                </td>
+            </tr>
+            <tr>
+                <th><label><font color="white">HOBBIES</font></label></th>
+                <td>
+                    <input type="checkbox"value = "Drawing"><font color="white">Drawing</font>
+                    <input type="checkbox"value = "Singing"><font color="white">Singing</font>
+                    <input type="checkbox"value = "Dancing"><font color="white">Dancing</font>
+                    <input type="checkbox"value = "Sketching"><font color="white">Sketching</font><br>
+                    <input type="checkbox"value = "Others"><font color="white">Others</font>
+                    <input type="text">
+                </td>
+            </tr>
+            <table>
+            <tr>
+                <th><label><font color="white">QUALIFICATION</font></label></th>
+                <td></td>
+                <td><font color="white"><center>Sl.No.</center></font>
+                    <td><font color="white"><center>Examination</center></font>
+                <td input type="text"><font color="white"><center>Board</center></font></td>
+                <td><font color="white"><center>Percentage</center></font></td>
+                <td><font color="white"><center>Year of Passing</center></font></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                  <td><font color="white">1</font></td>
+                  <td><font color="white">Class X</font></td>
+                  <td><input type ="text"></td>
+                  <td><input type ="text"></td>
+                  <td><input type ="text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                  <td><font color="white">2</font></td>
+                  <td><font color="white">Class XI</font></td>
+                  <td><input type ="text"></td>
+                  <td><input type ="text"></td>
+                  <td><input type ="text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                  <td><font color="white">3</font></td>
+                  <td><font color="white">Graduation</font></td>
+                  <td><input type ="text"></td>
+                  <td><input type ="text"></td>
+                  <td><input type ="text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                  <td><font color="white">4</font></td>
+                  <td><font color="white">Master</font></td>
+                  <td><input type ="text"></td>
+                  <td><input type ="text"></td>
+                  <td><input type ="text"></td>
+            </tr>
+        </table>
+            <tr>
+                <th><label><font color="white">COURSES <br> APPLIED FOR</font></label></th>
+                <td>
+                    <input type="radio" value="Php"><font color="white">Php</font>
+                    <input type="radio" value="Python"><font color="white">Python</font>
+                    <input type="radio" value="Java"><font color="white">Java</font>
+                    <input type="radio" value="Digital Marketing<"><font color="white">Digital Marketing</font>
+                </td>
+            </tr>
+
+        </table>
+        <input type="submit"value="submit" align="center">
+        <input type="reset"value="reset" align="center">
+    </form>
+</body>
+</html>

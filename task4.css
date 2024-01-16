@@ -1,0 +1,36 @@
+body{
+    background-color: #333;
+    padding:0px;
+}
+ul{
+    background-color:azure;
+    list-style-type: none;
+    padding: 0px;
+    border-radius: 10px;
+    margin-top: 300px;
+    margin-left: 600px;
+    width: 200px;
+    overflow: hidden;
+}
+a{
+    color:rgb(81, 218, 81);
+    text-decoration: none;
+    text-align: center;
+    font-size:larger;
+}
+a:hover{
+    color:white;
+}
+.a:hover{
+    color:white;
+    border-radius:"none";
+    background-color: rgb(88, 209, 88);
+    overflow: hidden;
+}
+div{
+    padding: 5px;
+    overflow: hidden;
+}
+.a{
+    border:0.5px solid black;
+}

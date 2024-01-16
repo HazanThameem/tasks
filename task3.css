@@ -1,0 +1,13 @@
+input[type="text"],input[type="number"],input[type="email"],textarea{
+    color:brown;
+}
+input[type="submit"]{
+    color: white;
+    background-color: green;
+    margin-left: 100px;
+}
+input[type="reset"]{
+    color: white;
+    background-color: green;
+    margin-left: 25px;    
+}
